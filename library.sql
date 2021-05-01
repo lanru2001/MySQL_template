@@ -1,0 +1,20 @@
+#creating a database in MySQl 
+CREATE DATABASE LIBRARY;
+
+CREATE TABLE IF NOT EXISTS books (
+	book_id INT,
+	title VARCHAR(255) NOT NULL,
+	publish_date DATE,
+	description TEXT,
+	PRIMARY KEY (book_id)
+)  ENGINE=INNODB;
+
+INSERT INTO books(book_id,title,publish_date, description)VALUES (1,'Learn MySQL', CURTIME(),'this is a book on mysql');
+
+INSERT INTO books(book_id,title,publish_date, description)VALUES (2,'Learn Oracle', CURTIME(),'this is a book on oracle');
+
+INSERT INTO books(book_id,title,publish_date, description)VALUES (3,'Learn SQL Server', CURTIME(),'this is a book on SQL Server');
+
+INSERT INTO books(book_id,title,publish_date, description)VALUES (4,'Learn DB2', CURTIME(),'this is a book on DB2');
+
+INSERT INTO books(book_id,title,publish_date, description)VALUES (5,'Learn Aurora', CURTIME(),'this is a book on amazon Aurora');
